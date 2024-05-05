@@ -4,7 +4,7 @@
 #include <netinet/in.h>
 #include <string.h>
 #include <arpa/inet.h>
-
+#include <signal.h>
 
 
 /*服务端代码流程：
@@ -29,6 +29,8 @@ int main(int argc, char **argv)
 
     int iRecvLen;
     unsigned char ucRecvBuf[1000];
+
+    signal(SIGCHLD,SIG_IGN);
 
     iSocketServer = socket(AF_INET,  SOCK_STREAM, 0);
     if (-1 == iSocketServer)
