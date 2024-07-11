@@ -1,0 +1,1 @@
+cmd_/home/carlos11/Desktop/imx6ull-learn/driver/01hello/hello_drv.ko := arm-linux-gnueabi-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/carlos11/Desktop/imx6ull-learn/driver/01hello/hello_drv.ko /home/carlos11/Desktop/imx6ull-learn/driver/01hello/hello_drv.o /home/carlos11/Desktop/imx6ull-learn/driver/01hello/hello_drv.mod.o ;  true
